@@ -4,15 +4,15 @@ var fs = require('fs');
 function server_fun( req, res )
 {
     //console.log( req );
-    console.log( req.url );
+    //console.log( req.url );
     var fn = req.url.split('/')[1];
-    console.log(fn);
+    //console.log(fn);
     try {
         var f = fs.readFileSync( fn );
     }
     catch( e ) {
         // return [];
-        res.end('enter a file');
+        res.end('enter a valid file');
     }
 
     try{
@@ -20,7 +20,7 @@ function server_fun( req, res )
      }
      catch(e)
      {
-       var contents = 'file does not exist in the current directory.'
+       res.end('enter a valid file');
      }
     res.writeHead( 200 );
     res.end( contents );
