@@ -1,0 +1,56 @@
+<!--Honor Code Upheld: I have not received or given any unauthorized help in this assignment. Nelson Ding-->
+<html>
+<head><link rel="stylesheet" type="text/css" href="pretty.css"></head>
+  <body>
+    <form action="/weather_form" method="get">
+      <input type="text" name="start_date_hour" value="">Start Hour(DateUTC)</input>
+      <input type="text" name="start_date_minute" value="">Start Minute(DateUTC)</input>
+      <br>
+      <input type="text" name="end_date_hour" value="">End Hour(DateUTC)</input>
+      <input type="text" name="end_date_minute" value="">End Minute(DateUTC)</input>
+      <br>
+      <input type="submit"></input>
+    </form>
+    <br>
+    <br>
+    <form action="/data_add" method="get">
+      <input type="text" name="time_hour" value="">TimeMDT(hour)</input>
+      <input type="text" name="time_minute" value="">TimeMDT(minute)</input>
+      <input type="text" name="am_pm" value="">TimeMDT(AM/PM))</input>
+      <br>
+      <input type="text" name="temp" value="">TemperatureF</input>
+      <br>
+      <input type="text" name="dew" value="">Dew pointF</input>
+      <br>
+      <input type="text" name="humidity" value="">Humidity</input>
+      <br>
+      <input type="text" name="sea" value="">Sea_level_pressureIn</input>
+      <br>
+      <input type="text" name="visi" value="">VisibilityMPH</input>
+      <br>
+      <input type="text" name="wind_dir" value="">Wind_direction</input>
+      <br>
+      <input type="text" name="wind_spd" value="">Wind_speedMP</input>
+      <br>
+      <input type="text" name="gust_spd" value="">Gust_speedMP</input>
+      <br>
+      <input type="text" name="pre" value="">PrecepitationIn</input>
+      <br>
+      <input type="text" name="evt" value="">Events</input>
+      <br>
+      <input type="text" name="con" value="">Conditions</input>
+      <br>
+      <input type="text" name="wind_dgree" value="">Wind_dir_degrees</input>
+      <br>
+      <input type="text" name="date_yr" value="">DateUTC_year</input>
+      <input type="text" name="date_mn" value="">DateUTC_month</input>
+      <input type="text" name="date_day" value="">DateUTC_day</input>
+      <br>
+      <input type="text" name="date_hr" value="">DateUTC_hour</input>
+      <input type="text" name="date_min" value="">DateUTC_minute</input>
+      <input type="text" name="date_sec" value="">DateUTC_second</input>
+      <br>
+      <input type="submit"></input>
+    </form>
+  </body>
+</html>
